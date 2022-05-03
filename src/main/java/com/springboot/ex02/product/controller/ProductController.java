@@ -50,7 +50,7 @@ public class ProductController {
 		
 		return map; // json 데이터
 	};
-	
+	//
 	@RequestMapping(value = "/insert", method = RequestMethod.POST)
 	@ResponseBody
 	public Map<String, Object> regProduct(@RequestBody Product param, Model model) {
