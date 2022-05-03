@@ -8,7 +8,7 @@ public interface ProductService {
 	
 	public List<Product> listAll(); // list
 	
-	public void save(Product product); // insert, update(key가 있으면)
+	public Product save(Product product); // insert, update(key가 있으면)
 	
 	public Product get(int id);	// 1건 select
 	

@@ -22,8 +22,8 @@ public class ProductServiceImpl implements ProductService {
 
 	// insert, update
 	@Override
-	public void save(Product product) {
-		dao.save(product);
+	public Product save(Product product) {
+		return dao.save(product);
 	}
 
 	// 1건 select

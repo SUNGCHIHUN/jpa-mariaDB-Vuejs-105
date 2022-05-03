@@ -9,5 +9,4 @@ public class JpaMariaDbVuejs105Application {
 	public static void main(String[] args) {
 		SpringApplication.run(JpaMariaDbVuejs105Application.class, args);
 	}
-
 }
