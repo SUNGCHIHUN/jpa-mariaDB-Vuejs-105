@@ -85,8 +85,8 @@ export default {
             brand,
             madein,
             price,
-            updateProduct,
             moveHome,
+            updateProduct,
         }
 
     },

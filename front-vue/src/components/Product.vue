@@ -79,15 +79,11 @@ export default {
             })
         }
 
+
         // 수정함수 생성
-        const updateProduct = (id) => {
-            router.push({
-                name: 'update',
-                query: {
-                    id: id
-                }
-            })
-        }
+        const updateProduct = productList
+
+
 
         onMounted(async () => {
             await store.dispatch('listProduct/fetchList')
@@ -98,7 +94,6 @@ export default {
             isModalOpen,
             openModal,
             closeModal,
-            updateProduct,
             deleteProduct,
             moveDetail,
         }

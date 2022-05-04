@@ -7,13 +7,13 @@ export default {
             
             try{
                 
-                let response = await axios.post('http://localhost:8081/api/update', payload, {
+                const response = await axios.post('http://localhost:8081/api/update', payload, {
                     headers: {
                         'Content-Type': 'application/json; charset=utf-8'
                     }
                 });
                 
-                console.log(response.data.resultMsg);
+                console.log(response);
 
                 commit('clearInputData/clearInputData', {}, { root: true });
             } catch(error) {
