@@ -51,7 +51,8 @@ export default {
         }
         
         onMounted(async () => {
-            await store.dispatch('fetchDetail', route.query.id);
+            await store.dispatch('detailProduct/fetchDetail', route.query.id);
+            console.log('detail - onMounted data : ' + data.value);
         });
         
         onUnmounted(() => {

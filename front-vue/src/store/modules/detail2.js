@@ -1,4 +1,3 @@
-
 import axios from 'axios'
 
 export default {
@@ -21,8 +20,8 @@ export default {
 
             try {
                 let response = await axios.get('http://localhost:8040/api/detail?id=' + payload, {}, {
-                headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
+                    headers: {
+                        'Content-Type': 'application/json; charset=utf-8'
                 }
                 });
                 console.log(response);
@@ -33,7 +32,7 @@ export default {
                 }
                 console.log(temp);
                 commit('setProductDetail', temp);
-                console.log('Detail-fetchDetail state 확인 : ' + state.productDetail);
+                console.log('Detail-fetchDetail state 확인 : ', state.productDetail);
 
             } catch(error) {
                 console.log(error);
