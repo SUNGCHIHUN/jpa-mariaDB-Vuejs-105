@@ -41,7 +41,7 @@ export default {
     actions: {
         // 비동기 처리를 위한 async, await는 actions 함수에만 적용가능(mutations에서는 불가)
         // state를 직접 가공하기 위해서 내부에서 호출된 mutation을 사용해 state를 변경한다. ex) commit('mutataion 함수명')
-        async fetchList({ state, commit}){
+        async fetchList({ state, commit }){
 
             console.log('dispatch 호출')
             // commit은 mutations에 정의된 함수를 호출, clearProductList는 해당 state에 대한 초기화
