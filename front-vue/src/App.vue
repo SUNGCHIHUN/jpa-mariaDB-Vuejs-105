@@ -1,5 +1,5 @@
 <template>
-  <router-view/>
+  <router-view/> <!-- components/컴포넌트가 렌더링(라우터) -->
 </template>
 
 <style>
